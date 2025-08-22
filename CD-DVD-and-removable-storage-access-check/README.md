@@ -4,4 +4,4 @@ The goal of this project is security configuration assessment of all removable s
 
 1. To apply this check for Windows 10 only, we have to define rule for requirement block of .yml file. In Windows we can check product name from following reg query,<br>
 `reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName`<br>
-![reg query for targeted OS](CD-DVD-and-removable-storage-access-check/2.png)
+![reg query for targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/2.png)
