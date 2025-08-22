@@ -43,6 +43,6 @@ vi. On the Wazuh server navigate to */var/ossec/etc/shared/default/agent.conf* a
   </sca>
 </agent_config>
 ```
-and save file. 
+and save file.<brr> 
 vii. Restart wazuh agent, for any error you can check wazuh agent logs, 
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/19.png) <br><br>
