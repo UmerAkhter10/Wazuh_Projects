@@ -22,9 +22,13 @@ iii. On the Wazuh agent, edit the local_internal_options.conf file to allow the 
 and add `sca.remote_commands=1` in **local_internal_options.conf** file.<br>
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/3.png) <br><br>
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/4.png) <br><br>
-iv. If file has no write permission, edit the properties, 
+iv. If file has no write permission, edit the properties of file.
+#### Possible respose 
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/5.png) <br><br>
+#### navigate to *security* ta in properties
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/6.png) <br><br>
+#### Tick the write permission
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/7.png) <br><br>
+#### Write permission is enabled now
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/8.png) <br><br>
 v. 
