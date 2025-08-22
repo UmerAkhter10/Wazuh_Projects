@@ -12,8 +12,19 @@ You can also verify this manually using the Registry Editor: press Windows key +
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/1.png) <br><br>
 So, the rule for requirement block will be `'r:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion -> ProductName -> r:^Windows 10'`
 ### 2. Checks Section of .yml file
-i. Rules to check CD/DVD read, write and execution permissions denied check,<br><br>
+i. Wazuh rules to detect when read, write, or execution access to CD/DVD devices is denied,<br><br>
 `'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} -> Deny_Read -> 1'`<br>
 `'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} -> Deny_Write -> 1'`<br>
 `'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} -> Deny_Execute -> 1'`<br>
-
+ii. Wazuh rules to detect all removable storage classes access denied,<br><br>
+`'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices -> Deny_All -> 1'`<br><br>
+iii. On the Wazuh agent, edit the local_internal_options.conf file to allow the execution of commands in SCA policies sent from the Wazuh server. On Windows agent navigate to *C:\Program Files (x86)\ossec-agent*
+and add `sca.remote_commands=1` in **local_internal_options.conf** file.<br>
+![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/3.png) <br><br>
+![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/4.png) <br><br>
+iv. If file has no write permission, edit the properties, 
+![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/5.png) <br><br>
+![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/6.png) <br><br>
+![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/7.png) <br><br>
+![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/8.png) <br><br>
+v. 
