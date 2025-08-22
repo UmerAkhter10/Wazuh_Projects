@@ -4,7 +4,7 @@ The goal of this project is security configuration assessment of all removable s
 
 ## Setup Instructions 
 ### 1. Requirement Section of .yml file
-To apply this check only on Windows 10 systems, you need to define a rule within the requirement block of the .yml file. On Windows, you can verify the product name by querying the registry using the following command:<br>
+To apply this check only on Windows 10 systems, you need to define a rule within the requirement block of the [.yml file](win_10_custom_sca.yml). On Windows, you can verify the product name by querying the registry using the following command:<br>
 `reg query "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName`<br><br>
 ![reg query for targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/2.png) <br><br>
 You can also verify this manually using the Registry Editor: press Windows key + R, type regedit, and navigate to
