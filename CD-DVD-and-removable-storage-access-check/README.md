@@ -16,7 +16,7 @@ i. Wazuh rules to detect when read, write, or execution access to CD/DVD devices
 `'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} -> Deny_Read -> 1'`<br>
 `'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} -> Deny_Write -> 1'`<br>
 `'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} -> Deny_Execute -> 1'`<br>
-ii. Wazuh rules to detect all removable storage classes access denied,<br><br>
+ii. Wazuh rule to detect all removable storage classes access denied,<br><br>
 `'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices -> Deny_All -> 1'`<br><br>
 iii. On the Wazuh agent, edit the local_internal_options.conf file to allow the execution of commands in SCA policies sent from the Wazuh server. On Windows agent navigate to *C:\Program Files (x86)\ossec-agent*
 and add `sca.remote_commands=1` in **local_internal_options.conf** file.<br>
@@ -25,7 +25,7 @@ and add `sca.remote_commands=1` in **local_internal_options.conf** file.<br>
 iv. If file has no write permission, edit the properties of file.
 #### Possible respose 
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/5.png) <br><br>
-#### Navigate to *security* ta in properties
+#### Navigate to *security* tab in properties
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/6.png) <br><br>
 #### Tick the write permission
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/7.png) <br><br>
