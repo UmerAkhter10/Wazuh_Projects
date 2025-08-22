@@ -25,10 +25,11 @@ and add `sca.remote_commands=1` in **local_internal_options.conf** file.<br>
 iv. If file has no write permission, edit the properties of file.
 #### Possible respose 
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/5.png) <br><br>
-#### navigate to *security* ta in properties
+#### Navigate to *security* ta in properties
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/6.png) <br><br>
 #### Tick the write permission
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/7.png) <br><br>
 #### Write permission is enabled now
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/8.png) <br><br>
-v. 
+v. On the Wazuh server, place a new policy file in the /var/ossec/etc/shared/default/win_10_custom_sca.yml, using `sudo nano /var/ossec/etc/shared/default/win_10_custom_sca.yml`. Copy SCA policy and save the file (CTRL + O -> CTRL + X).
+ 
