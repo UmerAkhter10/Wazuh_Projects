@@ -48,7 +48,7 @@ vii. Restart wazuh agent, for any error you can check wazuh agent logs,
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/19.png) <br><br>
 viii. Check SCA Module in Wazuh Dashboard for targeted endpoints, 
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/11.png) <br><br>
-ix. Check are **Not Applicable** because these registry values are not configured,  
+ix. Checks are **Not Applicable** because these registry values are not configured,  
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/12.png) <br><br>
 #### Registry Values at the endpoint
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/13.png) <br><br>
