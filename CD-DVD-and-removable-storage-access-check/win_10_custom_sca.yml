@@ -1,0 +1,63 @@
+# Security Configuration Assessment
+# According to the organization's Cybersecurity Policy, 
+# Check 1. The use of all removable storage classes and CD/DVD (for reading, writing, or executing) is 
+# prohibited, except where explicitly exempted.
+# This SCA policy is for Windows 10 systems, steps by steps more checks will be included.  
+
+policy:
+  id: "Win_10_Custom_SCA_POLICY"
+  file: "win_10_custom_sca.yml"
+  name: "Widows 10 configurations assessment to comply with organizational policy"
+  description: " Widows 10 security configurations assessment to comply with organizational policy"
+
+requirements:
+  title: "Check that the OS is Windows 10"
+  description: "Check that OS running on the endpoint where Wazuh agent is installed is win 10"
+  condition: all
+  rules:
+    - 'r:HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion -> ProductName -> r:^Windows 10'
+
+checks:
+  - id: 30001
+    title: "Ensure CD/DVD read access is blocked"
+    description: "Check whether CD/DVD read access deny is enabled"
+    condition: all
+    rules:
+      - 'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} -> Deny_Read -> 1' 
+  
+  - id: 30002
+    title: "Ensure CD/DVD write access is blocked"
+    description: "Check whether CD/DVD write access deny is enabled"
+    condition: all
+    rules: 
+      - 'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} -> Deny_Write -> 1'
+  
+  - id: 30003
+    title: "Ensure CD/DVD execute access is disabled"
+    description: " Check whether CD/DVD execute access deny is enabled "
+    condition: all
+    rules:
+      - 'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices\{53f56308-b6bf-11d0-94f2-00a0c91efb8b} -> Deny_Execute -> 1'
+
+  - id: 30004
+    title: "Ensure all removable storage classes access is disabled"
+    description: " Check whether all removable storage classes access deny is enabled "
+    condition: all
+    rules:
+      - 'r:HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\RemovableStorageDevices -> Deny_All -> 1'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
