@@ -34,7 +34,8 @@ iv. If file has no write permission, edit the properties of file.
 v. On the Wazuh server, place a new policy file in the /var/ossec/etc/shared/default/win_10_custom_sca.yml, using `sudo nano /var/ossec/etc/shared/default/win_10_custom_sca.yml`. Copy SCA policy and save the file (CTRL + O).
 ![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/9.png) <br><br>
 vi. On the Wazuh server navigate to */var/ossec/etc/shared/default/agent.conf* and add following block to tell Wazuh Server scan custom sca policy. 
-```<agent_config>
+```
+<agent_config>
   <sca>
     <policies>
         <policy enabled="yes">C:\Program Files (x86)\ossec-agent\shared\win_10_custom_sca.yml</policy>
@@ -42,3 +43,6 @@ vi. On the Wazuh server navigate to */var/ossec/etc/shared/default/agent.conf* a
   </sca>
 </agent_config>
 ```
+and save file. 
+vii. Restart wazuh agent, for any error you can check wazuh agent logs, 
+![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/19.png) <br><br>
