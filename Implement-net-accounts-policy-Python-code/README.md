@@ -5,3 +5,9 @@ The objective of this task is to develop a Python-based solution (packaged as an
 ## Setup Instructions 
 ### 1. Development of Python Code and Executable file
 [Python Code](cis_win10_benchmark_net_accounts_remediations.py) is developed and [.exe file](cis_win10_benchmark_net_accounts_remediations.exe) is created using pyinstaller.
+
+### 2. Execute the .exe on a fresh, unconfigured Windows 10 system
+### Before execution 'net accounts' result
+
+
+
