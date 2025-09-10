@@ -15,6 +15,7 @@ The objective of this task is to develop a Python-based solution (packaged as an
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/4.png)<br><br>
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/5.png)<br><br>
 #### After execution 'net accounts' result
+Executing the program enforces the configured net accounts policies on the target Windows 10 system.<br>
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/6.png)<br><br>
 #### Again execute the file
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/7.png)<br><br>
