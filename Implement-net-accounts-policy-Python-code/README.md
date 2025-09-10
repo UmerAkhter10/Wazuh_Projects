@@ -8,6 +8,15 @@ The objective of this task is to develop a Python-based solution (packaged as an
 
 ### 2. Execute the .exe on a fresh, unconfigured Windows 10 system
 #### Before execution 'net accounts' result
-![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/10.png)<br><br>
+![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/1.png)<br><br>
+#### Execution 
+![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/2.png)<br><br>
+![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/3.png)<br><br>
+![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/4.png)<br><br>
+![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/5.png)<br><br>
+#### After execution 'net accounts' result
+![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/6.png)<br><br>
+#### Again execute the file
+![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/7.png)<br><br>
 
 
