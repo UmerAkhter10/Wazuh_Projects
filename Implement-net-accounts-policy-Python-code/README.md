@@ -7,14 +7,14 @@ The objective of this task is to develop a Python-based solution (packaged as an
 [Python Code](cis_win10_benchmark_net_accounts_remediations.py) is developed and [.exe file](cis_win10_benchmark_net_accounts_remediations.exe) is created using pyinstaller.
 
 ### 2. Execute the .exe on a fresh, unconfigured Windows 10 system
-#### Before execution 'net accounts' result
+#### Before execution `net accounts` result
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/1.png)<br><br>
 #### Execution 
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/2.png)<br><br>
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/3.png)<br><br>
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/4.png)<br><br>
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/5.png)<br><br>
-#### After execution 'net accounts' result
+#### After execution `net accounts` result
 Executing the program enforces the configured net accounts policies on the target Windows 10 system.<br>
 ![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/6.png)<br><br>
 #### Again execute the file
