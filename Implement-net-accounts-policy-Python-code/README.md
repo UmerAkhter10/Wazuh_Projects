@@ -8,6 +8,6 @@ The objective of this task is to develop a Python-based solution (packaged as an
 
 ### 2. Execute the .exe on a fresh, unconfigured Windows 10 system
 #### Before execution 'net accounts' result
-![regedit to check targeted OS](CD-DVD-and-removable-storage-access-check-screenshots/3.png)
+![Preview Failed](Implement-net-accounts-policy-Python-code-screenshots/1.png)
 
 
