@@ -1,5 +1,6 @@
-Remove current version of wazuh agent 
-sudo apt-get remove --purge wazuh-agent
+## Dongrad Wazuh Agent from 4.13.0 to 4.12.0 in Linux Endpoint
+**Remove current version of Wazuh agent**<br> 
+`sudo apt-get remove --purge wazuh-agent`
 Download the desired 4.12.0 version of the Wazuh agent package:
 wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.12.0-1_amd64.deb
 install the downloaded version 
