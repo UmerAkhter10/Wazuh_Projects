@@ -11,7 +11,7 @@
 **Check status of agent**<br> 
 `sudo systemctl status wazuh-agent`<br>
 If wazuh-agent is active on endpoint and disconnected on the manager side/dashboard, one possible reason is that the agent enrollment is password protected<br>
-Verify in the Wazuh manager /var/ossec/etc/ossec.conf file <auth> block, <use_password> tag, if yes the enrollment is password protected.<br>
+Verify in the Wazuh manager /var/ossec/etc/ossec.conf file *&lt;auth*&gt; block, <use_password> tag, if yes the enrollment is password protected.<br>
 Check password in /var/ossec/etc/authd.pass file of wazuh manager and create a file in the end point with password.<br> 
 `echo “YOUR_PASSWORD” > /var/ossec/etc/authd.pass`<br>
 **Change its permissions and ownership**<br>
