@@ -8,7 +8,7 @@
 **Check the installed version**<br> 
 `dpkg -l | grep wazuh-agent`<br>
 **Set manager ip address in /var/ossec/etc/ossec.conf file in <server> tag**<br>
-*<address>**MANAGER_IP_ADDRESS**</address>*<br>
+*<address>MANAGER_IP_ADDRESS</address>*<br>
 **Check status of agent**<br> 
 `sudo systemctl status wazuh-agent`<br>
 *If wazuh-agent is active on endpoint and disconnected on the manager side/dashboard, one possible reason is that the agent enrollment is password protected*<br>
